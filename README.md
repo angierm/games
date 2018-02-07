@@ -37,3 +37,7 @@ Detectamos un problema en cuanto a la administración que se maneja actualmente 
 ## Propuesta elementos UI
 
 ![propuesta](assets/images/ui-elements.png)
+
+## Organización
+
+![propuesta](assets/images/organization.jpg)
