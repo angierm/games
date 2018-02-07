@@ -27,3 +27,7 @@ Detectamos un problema en cuanto a la administración que se maneja actualmente 
   * Maquetación - NAV - OK
   * Funcionalidad: Data OK, Firebase funcionando, login en proceso.
   * Github colaborativo - OK
+
+  ## Sketch
+
+![sketch 1](assets/images/game1.png)
