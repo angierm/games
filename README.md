@@ -31,3 +31,5 @@ Detectamos un problema en cuanto a la administración que se maneja actualmente 
   ## Sketch
 
 ![sketch 1](assets/images/game1.png)
+![sketch 2](assets/images/game2.png)
+![sketch 3](assets/images/game3.png)
