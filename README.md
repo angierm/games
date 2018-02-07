@@ -41,3 +41,7 @@ Detectamos un problema en cuanto a la administración que se maneja actualmente 
 ## Organización
 
 ![propuesta](assets/images/organization.jpg)
+
+## Base de datos - Guía
+
+![propuesta](assets/images/data.jpg)
