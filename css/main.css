@@ -1,10 +1,24 @@
+.body-container {
+  padding-top: 100px;
+}
 video {
   width: 140%;
-  height: auto;
-}
+  height: auto;}
 .video {
   position:absolute;
     height:100%;
     width:100%;
     top:0px;
-    left:0px;
+    left:0px;}
+/* Schedule   */
+h6 {
+  color: #fff;
+}
+.caja {
+  width: 150px;
+  height: 30px;
+  margin: 15px;
+  background: #FF9900;
+  cursor:pointer;
+}
+.color{background: #fff;}
