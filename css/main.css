@@ -38,6 +38,14 @@ color: black;
 margin:0;
 }
 
-i{
+i, .img-responsive{
   display: inline-block;
+}
+
+.img-responsive{
+  margin-left: 40px;
+
+}
+.api {
+  background: black;
 }
