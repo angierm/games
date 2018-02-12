@@ -75,19 +75,15 @@
             headers: {"client-id":"k143a6z93wczsf27hbxz9rtxy10d9d"},
             data: {limit:20},
             type: 'get'
-            // context: document.body
           }).done(function(data) {
-          // $( this ).addClass( "done" );
           console.log(data);
 
           for(var i=0; i<data.top.length; i++){
-            // console.log(data.top[i].game);
-            console.log(data.top[i].game.box.large);
+            // console.log(data.top[i].game.box.large);
             var imagen = $('<img />',{'class':'img-responsive'});
             $('body').append(imagen);
             imagen.prop('src',data.top[i].game.box.large);
           }
-          // console.log(data.top[0].game);
         });
         </script>
       </div>

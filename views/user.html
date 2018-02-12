@@ -23,66 +23,57 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <!-- <a href="/..index.html" class="navbar-brand"></a> -->
+            <a href="../views/menu4.html" class="navbar-brand">Inicio</a>
           </div>
           <!--menú-->
           <div class="row">
             <div class="col-md-8">
               <div class="collapse navbar-collapse" id="navbar1">
                 <ul class="nav navbar-nav ">
-                  <li >
-                    <a  href="../index.html"  >Inicio</a>
-                  </li>
                   <!-- XBOX ONE -->
-                  <li >
-                    <a  href="../views/general1.html"  >XBOX ONE </a>
+                  <li class="dropdown">
+                    <a  href="#" class=" dropdown-toggle active" data-toggle="dropdown">XBOX ONE </a>
                   </li>
                   <!-- PS4 -->
-                  <li >
-                    <a href="../views/general4.html" >PS4 </a>
+                  <li class="dropdown">
+                    <a  class=" dropdown-toggle active" data-toggle="dropdown">PS4 </a>
                   </li>
                   <!-- XBOX 360 -->
-                  <li >
-                    <a  href="../views/general2.html" >XBOX 360 </a>
+                  <li class="dropdown">
+                    <a  class=" dropdown-toggle active" data-toggle="dropdown">XBOX 360 </a>
                   </li>
                   <!-- WII U  -->
-                  <li >
-                    <a href="../views/general3.html" >WII U  </a>
+                  <li class="dropdown">
+                    <a  class=" dropdown-toggle active" data-toggle="dropdown">WII U  </a>
                   </li>
-                  <!-- Mas jugados  -->
-                  <li >
-                    <a href="../views/games.html" >Top 20 de juegos  </a>
-                  </li>
-
                  </ul>
-              </div>
-               <!-- Se trae del login -->
-            </div>
-            <div class="col-md-3 text-right">
-               <div class="row">
-                 <!-- <button type="button" class="text-right active btn btn-danger btn-default" name="button" id="login" >Login</button> -->
-                 <!-- <a class="text-right active">Login</a> -->
                </div>
-            </div>
-          </div>
-       </div>
-    </nav>
+               <!-- Se trae del login -->
+             </div>
+             <div class="col-md-3 text-right">
+               <div class="row">
+                 <a class="text-right active">Login</a>
+               </div>
+             </div>
+           </div>
+         </div>
+      </nav>
       <div class="container body-container">
         <!-- Inicia checkbox -->
         <div class="row">
           <div class="col-xs-6  col-md-offset-3 col-md-3 ">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="local" value="option2" >
+                <label class="form-check-label" for="local" id="lblLocal">
                   Local
                 </label>
               </div>
           </div>
           <div class="col-xs-6 col-md-3">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                  On line
+                <input class="form-check-input" type="radio" name="exampleRadios" id="online" value="option2">
+                <label class="form-check-label" for="online">
+                  Online
                 </label>
               </div>
           </div>
@@ -95,15 +86,17 @@
             <!-- Controles -->
             <form class="form-inline">
               <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Número de controles </label>
-              <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>Choose...</option>
+              <select class="custom-select my-1 mr-sm-2" id="extraControllers">
+                <option selected>Controles</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-                <option value="3">4</option>
+                <option value="4">4</option>
               </select>
             </form>
             <br>
+
+
             <!--Consola  -->
             <form class="form-inline">
               <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Consola </label>
@@ -112,14 +105,44 @@
                 <option value="1" data-console="XBOX ONE">Xbox One</option>
                 <option value="2" data-console="PS4">PS4</option>
                 <option value="3" data-console="XBOX360">Xbox 360</option>
-                <option value="3" data-console="XWIIU">WII U</option>
+                <option value="4" data-console="WII U">WII U</option>
               </select>
             </form>
             <br>
+
             <!-- Inicia el DOM para traer los juegos -->
             <div class="" id="games"></div>
             <br>
+
+            <!-- Pagar con PAYPAL -->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <span>Tu total a pagar es: </span>
+                  <div class="" id="pago">
+                  <p id="totalAccount">0.00</p>
+                </div>
+                <p>¿Pagar ahora?</p>
+                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" id="paypal" name="cmd" value="_xclick">
+                  <input type="hidden" name="business" value="openalfa-facilitator@openalfa.com">
+                  <input type="hidden" name="item_name" value="Premium Subscription">
+                  <input type="hidden" name="currency_code" value="MXN">
+                  <input type="hidden" name="amount" value="">
+                  <input type="image" src="http://www.paypal.com/es_XC/i/btn/x-click-but01.gif"
+                         name="submit"
+                         alt="Make payments with PayPal - it's fast, free and secure!">
+                  <!-- Regresa a inicio de sesión  -->
+                  <input type="hidden" name="return" value="http://www.sitio.com/pagado.php">
+                  <input type="hidden" name="cancel_return" value="http://www.sitio.com/cancelado.php">
+              </form>
+
+              </div>
+            </div>
           </div>
+        </div>
+
+
           <!-- Horarios disponibles -->
           <div class="col-xs-6  col-md-offset-1 col-md-3 " id='horarios'>
             <h2>Elige alguno de los horarios disponibles</h2>
@@ -163,7 +186,8 @@
       <!-- Latest compiled and minified JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       <script src="../js/jquery.min.js"></script>
-     <script src="../js/app.js"></script>
+      <script src="../js/app.js"></script>
+      <script src="../js/users.js"></script>
       <script type="text/javascript" src="../js/data.js"></script>
 
     </body>
