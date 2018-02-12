@@ -61,5 +61,6 @@ colocando el resultado dentro del elemento con el id 'totalAccount', para mostra
 function calculateAmount(){
   totalAmount = parseFloat(20 + onlineCharge + chargeExtraController);
   $('#totalAccount').html(totalAmount.toFixed(2));
+  // actualiza monto de pago en paypal con respecto al total calculado según la elección del usuario
   $('#paypal').val(totalAmount.toFixed(2));
 }
