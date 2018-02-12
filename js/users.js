@@ -59,12 +59,7 @@ Esta función se encarga de calcular el total a pagar por el usuario, sumando la
 colocando el resultado dentro del elemento con el id 'totalAccount', para mostrar el total a pagar al usuario.
 ############################################## */
 function calculateAmount(){
-  if(onlineCharge){
-    totalAmount = parseFloat(25 + onlineCharge + chargeExtraController);
-    total = $('#totalAccount').html(totalAmount.toFixed(2));
-
-  } else{
-    totalAmount = parseFloat(20 + chargeExtraController);
-    total = $('#totalAccount').html(totalAmount.toFixed(2));
-  }
+  totalAmount = parseFloat(20 + onlineCharge + chargeExtraController);
+  $('#totalAccount').html(totalAmount.toFixed(2));
+  $('#paypal').val(totalAmount.toFixed(2));
 }
