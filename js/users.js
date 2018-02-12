@@ -68,13 +68,3 @@ function calculateAmount(){
     total = $('#totalAccount').html(totalAmount.toFixed(2));
   }
 }
-
-// function payPal(){
-//     $('#paypal').click(pago);
-// }
-//
-// function pago(){
-//   var pago = $('<input />');
-//   $('body').append(pago);
-//   pago.prop('value', total);
-// }
